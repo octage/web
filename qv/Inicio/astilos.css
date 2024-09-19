@@ -1,0 +1,539 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: #a9aaac;
+    color: #fff;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #020087;
+    padding-left: 2vw;
+}
+
+.cont-ul {
+    display: flex;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+    cursor: pointer;
+    padding: 1.5vw;
+    transition: all .3s ease 0s;
+    text-decoration: none;
+}
+
+li:hover {
+    background-color: #135ab8;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.develop {
+    position: relative;
+}
+
+.ul-second {
+    display: none;
+    position: absolute;
+    margin-top: 1.5vw;
+}
+
+.ul-second > li {
+    width: 190px;
+    transform: translateX(-20px);
+    border-bottom: solid 1px #fff;
+    text-align: center;
+    background-color: #020087;
+    justify-content: center;
+}
+
+.ul-second > li:hover {
+    background-color: #135ab8;
+}
+
+.develop:hover > .ul-second {
+    display: block;
+}
+
+.ul-third {
+    position: absolute;
+    transform: translateX(100%);
+    right: 0;
+    top: 40%;
+    display: none;
+    background-color: #020087;
+}
+
+.ul-third > li {
+    padding: 1.5vw;
+    border-bottom: solid 1px #fff;
+}
+
+.front:hover > .ul-third {
+    display: block;
+}
+
+@media (max-width: 900px) {
+    .logo-quiosco {
+        display: inline-flex;
+    }
+}
+
+html {
+    size: 100vh;
+}
+
+main {
+    padding: 2vw;
+    text-align: center;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product-card {
+    background-color: #fff;
+    color: #000;
+    border-radius: 5px;
+    width: 250px;
+    margin: 1vw;
+    padding: 1vw;
+    text-align: center;
+}
+
+.product-card img {
+    width: 50%; /* Ajusta el ancho al 100% del contenedor */
+    height: 100px; /* Fija la altura de las imágenes */
+    object-fit: cover; /* Recorta la imagen si es necesario para llenar el contenedor */
+    border-radius: 5px;
+}
+
+.product-card button {
+    background-color: #020087;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-card button:hover {
+    background-color: #135ab8;
+}
+
+footer {
+    bottom: 0;
+    background-color: #020087;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: small;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+}
+
+.cont-ul li a {
+    color: #fff; /* Color del texto */
+    font-weight: bold; /* Hacer el texto más visible */
+    display: flex;
+    align-items: center;
+}
+
+.cont-ul li a:hover {
+    background-color: #135ab8; /* Fondo cuando el ratón está sobre el enlace */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 5px 10px; /* Espaciado interno */
+}
+
+.productos-mas-elegidos {
+    text-align: left;
+    margin: 20px;
+    color: #020087;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Estilo para el recuadro del total del carrito */
+.cart-total {
+    background-color: #020087;
+    color: #fff;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.2em;
+    display: inline-block;
+}
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #020087;
+    padding: 1vw 2vw; /* Ajuste de padding */
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    margin: 0 auto; /* Centrar el formulario */
+}
+
+.search-form input[type="text"] {
+    padding: 0.5vw;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-form button {
+    padding: 0.5vw 1vw;
+    font-size: 1em;
+    background-color: #135ab8;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-form button:hover {
+    background-color: #0a4a8a;
+}
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #020087;
+    padding: 1vw 2vw; /* Ajuste de padding */
+    position: relative; /* Necesario para posicionar el formulario de búsqueda */
+}
+
+.logo-quiosco {
+    margin-right: auto; /* Empuja el logo hacia la izquierda */
+    color: #fff;
+    font-size: 1.5em;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+    margin-right: auto; /* Empuja los ítems hacia la izquierda */
+}
+
+.cont-ul {
+    display: flex;
+    list-style: none;
+}
+
+li {
+    list-style: none;
+    cursor: pointer;
+    padding: 1.5vw;
+    transition: all .3s ease 0s;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.develop {
+    position: relative;
+}
+
+.ul-second {
+    display: none;
+    position: absolute;
+    margin-top: 1.5vw;
+}
+
+.ul-second > li {
+    width: 190px;
+    transform: translateX(-20px);
+    border-bottom: solid 1px #fff;
+    text-align: center;
+    background-color: #020087;
+}
+
+.ul-second > li:hover {
+    background-color: #135ab8;
+}
+
+.develop:hover > .ul-second {
+    display: block;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    margin: 0 auto; /* Centrar el formulario */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.search-form input[type="text"] {
+    padding: 0.5vw;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-form button {
+    padding: 0.5vw 1vw;
+    font-size: 1em;
+    background-color: #135ab8;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-form button:hover {
+    background-color: #0a4a8a;
+}
+/* Estilos para la página de agregar producto */
+.form-container {
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+    padding: 2vw;
+    max-width: 800px;
+    margin: 2vw auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+    font-size: 2em;
+    margin-bottom: 1em;
+    color: #020087;
+}
+
+.form-group {
+    margin-bottom: 1em;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 0.5em;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group select,
+.form-group input[type="file"] {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="number"]:focus,
+.form-group select:focus,
+.form-group input[type="file"]:focus {
+    border-color: #135ab8;
+    outline: none;
+}
+
+.submit-button {
+    background-color: #020087;
+    color: #fff;
+    padding: 0.75em 1.5em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #135ab8;
+}
+
+footer {
+    margin-top: 2em;
+    padding: 1em 0;
+    background-color: #020087;
+    color: #fff;
+    text-align: center;
+}
+.message {
+    background-color: #d4edda; 
+    color: #155724; 
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    padding: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+-------------
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: #a9aaac;
+    color: #fff;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2vw;
+}
+
+.product-card {
+    background-color: #fff;
+    color: #000;
+    border-radius: 5px;
+    width: 250px;
+    margin: 1vw;
+    padding: 1vw;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.product-card h2 {
+    font-size: 1.2em;
+    margin: 0.5em 0;
+}
+
+.product-card p {
+    font-size: 1em;
+    margin: 0.5em 0;
+}
+
+.product-card button {
+    background-color: #020087;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-card button:hover {
+    background-color: #135ab8;
+}
+.remove-button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.remove-button:hover {
+    background-color: #e60000;
+}
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.remove-button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-top: 10px; /* Espacio arriba del botón */
+}
+
+.remove-button:hover {
+    background-color: #e60000;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.product-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product-details {
+    margin-top: 10px;
+}
+
+.add-product-card {
+    border: 2px dashed #007bff; /* Borde de línea punteada para resaltar */
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+.product-image {
+    width: 50px; /* Tamaño del ícono del signo más */
+    height: 50px;
+}
+
+.add-product-card .product-details h2 {
+    font-size: 16px;
+    color: #007bff;
+}
+
+.add-product-button {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.add-product-card:hover {
+    background-color: #e9ecef;
+    border-color: #0056b3;
+}
+
